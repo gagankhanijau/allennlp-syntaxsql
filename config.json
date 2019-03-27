@@ -1,0 +1,11 @@
+{
+  "dataset_reader": {
+    "type": "syntax_sql_reader"
+    
+  },
+  "test_data_path": "syntaxsql/dev.json",
+  "evaluate_on_test": true,
+  "model": {
+    "type": "syntaxsql_supermodel"
+  }
+}
