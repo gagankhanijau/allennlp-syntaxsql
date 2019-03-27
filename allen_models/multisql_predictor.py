@@ -10,6 +10,8 @@ from .net_utils import run_lstm, col_name_encode
 from allennlp.models import Model
 from allennlp.modules.seq2seq_encoders import Seq2SeqEncoder, PytorchSeq2SeqWrapper
 
+
+#changed constructor
 class MultiSqlPredictor(Model):
     '''Predict if the next token is (multi SQL key words):
         NONE, EXCEPT, INTERSECT, or UNION.'''

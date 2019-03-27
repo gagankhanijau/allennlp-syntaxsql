@@ -4,6 +4,7 @@ import numpy as np
 from torch.autograd import Variable
 from allennlp.nn.util import get_text_field_mask
 
+#changed method
 def run_lstm(lstm, inp, inp_len, hidden=None):
     mask = None
     ret_s = lstm(inp, mask)

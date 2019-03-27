@@ -9,7 +9,7 @@ from .net_utils import run_lstm, col_name_encode
 from allennlp.models import Model
 from allennlp.modules.seq2seq_encoders import Seq2SeqEncoder, PytorchSeq2SeqWrapper
 
-
+#changed constructor
 class KeyWordPredictor(Model):
     '''Predict if the next token is (SQL key words):
         WHERE, GROUP BY, ORDER BY. excluding SELECT (it is a must)'''

@@ -27,6 +27,7 @@ from allennlp.common.params import Params
 from allennlp.nn import util
 from allennlp.data import Instance
 
+#2 changed methods and 2 newly added methods at the end
 
 class Stack:
     def __init__(self):
@@ -78,6 +79,9 @@ def to_batch_tables1( tables, B, table_type):
     return col_seq
 
 PATH_TO_TABLES="syntaxsql/data/tables.json"
+
+
+## Changed method
 
 @Model.register("syntaxsql_supermodel")
 class SuperModel(Model):
@@ -145,7 +149,7 @@ class SuperModel(Model):
 
 
     
-
+    #changed method
     def forward(self, input_dict):
         # if self.part:
         #     return self.part_forward(q_seq,history,tables)
@@ -697,7 +701,7 @@ class SuperModel(Model):
 
 
 
-    
+#newly added methods
 
     @overrides
     def _load(cls,
